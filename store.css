@@ -1,0 +1,173 @@
+.navbar{
+  height: auto; 
+}
+
+
+        
+        /* added cool google font */
+header{
+  font-family:  "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+section.hero_container{
+  font-family:  "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card-title{
+  font-family:  "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* ovelay for backgorund for the parent */
+.background-container {
+  position: relative; /* To position the overlay absolutely */
+  width: 100%;
+  height: 100%; /* Full viewport height */
+  background-image: url('./picture/lamborghini_urus_performante_5.jpg');
+  background-position: center;
+  background-size: cover;
+  
+}
+
+ /* ovelay for backgorund for the parent */
+.background-container::before {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+  z-index: 1; /* Ensure the overlay is on top */
+  
+}
+
+.content {
+  position: relative; /* Content that is on top of the overlay */
+  z-index: 2; /* Ensure content is above the overlay */
+  color: #fff;
+
+}
+
+
+/* automatic scrolling image */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* stops the horizontal scroll on body */
+}
+
+.scrolling-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  
+}
+
+.scrolling-wrapper {
+  display: inline-block; 
+  white-space: nowrap;
+  padding-left: 40%; /*used to Create space before the images start moving */
+}
+
+.scrolling-wrapper img {
+  display: inline-block;
+  width: 50%; 
+  height: 50%;
+}
+
+
+/* Hero */
+.hero{
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+}
+ 
+/* making height auto */
+.hero-image img{
+  width: 100%;
+  height: auto; 
+}
+
+.hero-text {
+  padding: 1rem;
+}
+
+
+
+/* Media Query for Phones */
+@media (max-width: 480px) {
+  .hero {
+      flex-direction: column; /* Ensure content stacks vertically on small screens  until 480px */
+      
+  }
+
+  .hero-image img{
+      width: 100%;
+      height: auto; /* Ensures that the image fits the screen width until 480px*/
+  }
+
+  .hero-text {
+      text-align: center;
+      padding: 4%; 
+  }
+
+  .hero_h5 {
+    font-size: 80%;
+    
+  }
+
+  .btn {
+    margin-bottom: 5%;
+  }
+
+  
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px)  {
+   
+  .hero{
+    width: 95%;
+  }
+
+  .btn{
+    margin-bottom: 5%;
+  }
+  .hero-text{
+    padding: 4%;
+  }
+}
+
+
+
+/* Media Query for large screen */
+@media (min-width: 769px) {
+  .hero {
+    flex-direction: row; /* Stack items horizontally */
+      text-align: left;
+      width: 95%;
+      
+  }
+  
+  .hero-text{
+    margin-left: 50vh;
+    padding: 4%;
+  }
+
+   /* added space below the button */
+  .btn{
+    margin-bottom: 5%;
+  }
+}
+
+

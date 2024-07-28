@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Stores</title>
+    <!-- added google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Rye&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./store.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+     <!-- boothstrap icon link -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  </head>
+
+  <body> 
+    <!-- header section -->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark " id="Home">
+        <div class="container">
+          <!-- used text warning to make text yellow color -->
+          <a class="navbar-brand h1 text-warning font-weight-bold" href="#"
+            > <h1>CartelsAuto</h1> </a
+          >
+          <!-- our nav-bar button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <!-- used the # from our id tag for link within the same page -->
+                <a
+                  class="nav-link text-primary"
+                  aria-current="page"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <form class=" search-bar d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+
+  
+
+    <!-- hero section -->
+    <section class="container-fluid bg-black text-light text-center">
+      <div class=" hero  d-flex justify-content-between align-items-center">
+         <div class="hero-image">
+           <img
+             class=" image-fluid  "
+             src="./picture/bugatti-chiron-a-new-removebg.png"
+             alt="Description of the image"
+           />
+         </div>
+     
+         <div class="hero_text" id="about us">
+            <h1 class="text-warning">Welcome To Cartels Auto</h1>
+            <h5 class="hero_h5 text-primary">
+              We Got The Best Cars For You , What Car Do You Want 
+              Buggati Cheron, Lamborgini Avatendor, 
+              Any Car You Can Name We Got It,
+              We Are The Best At Cars , Order Now What Are You Waiting For ?
+            </h5>
+            <button class="btn btn-success btn-lg">BUY NOW</button>
+            
+         </div>
+      </div>
+    </section>
+
+                       <!--   Product Section -->
+
+  <!-- grid section -->
+    <section class="grid" id="menu" >
+      <div class="background-container">
+        <div class="content">
+            <div class="container">
+              <div class="row text-center g-5 mt-4 ">
+
+                <!-- used flex fill to give the cards equal height after adding d-flex to the col so it works -->
+                <div class="col-sm-6 col-md-6 col-lg-4 d-flex">
+                  <div class="card flex-fill bg-dark text-center">
+                    <!-- used mx-auto to center the pic -->
+                    <div class="mt-4">
+                      <img
+                        width="100%"
+                        height="100%"
+                        class="image-fluid mx-auto p-3"
+                        src="./picture/lamborghini_urus_performante_5.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+
+                    <!-- used the d-flex flex-column to flex the body so the price could be at the buttom -->
+                    <div class="card-body text-light h-100 d-flex flex-column">
+                      <h1 class="card-title text-warning">Lamborghini Urus</h1>
+                      <h5 class="card-text">
+                       Looking for a lambo with space of four then this is all you need. 
+                       Twin turbo V8 engine, this Urus SE's plug-in hybrid power train comprises of a 
+                       620-hp twin-turbo 4.0-liter V8 mated to a 192-hp electric motor setup.
+                      </h5>
+                      <!-- used mt-auto to automatically put the price at the buttom -->
+                      <h1 class="mt-auto">Price : <span class="text-success">$300,000</span></h1>
+                      <a href="#" class="btn btn-success btn-lg">SHOP NOW</a>
+                    </div>
+                  </div>
+                </div>
+                    <!-- used boothstrap for the grid responsiveness -->
+                <div class="col-sm-6 col-md-6 col-lg-4 d-flex">
+                  <div class="card flex-fill bg-dark text-center">
+                  
+                    <!-- added space up with mt-4 -->
+                    <div class="mt-4">
+                      <img
+                        width="100%"
+                        height="100%"
+                        class="image-fluid mx-auto p-3"
+                        src="./picture/black g wagn.jpeg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body text-light h-100  d-flex flex-column">
+                      <h1 class="card-title text-warning">G-Wagon</h1>
+                      <h5 class="card-text">
+                        Need something high standard then this 2024 New G-Wagon is for you.
+                        Has a 7G tronic gear-box , an impressive ground clearance of 9.25 inches
+                        and a permanent all-wheel driving allowing it to handle the most difficult
+                        off road situation.
+                      </h5>
+                      <h1 class="mt-auto">Price : <span class="text-success">$200,000</span></h1>
+                      <a href="#" class="btn btn-success btn-lg">SHOP NOW</a>
+                    </div>
+                  </div>
+                </div>
+                    <!-- did duplicate columns for the remaining cards -->
+                <div class="col-sm-6 col-md-6 col-lg-4  d-flex">
+                  <div class="card flex-fill bg-dark text-center">
+                    <div class="mt-4">
+                      <img
+                        width="100%"
+                        height="100%"
+                        class="image-fluid mx-auto p-3"
+                        src="./picture/black rolls royce.jpeg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                     <!-- used text warining to give the yellow color to my title -->
+                    <div class="card-body text-light h-100  d-flex flex-column">
+                      <h1 class="card-title text-warning">Rolls Royce</h1>
+                      <h5 class="card-text">
+                        Get yourself this luxurious rolls royce powered by a 6.75-liter twin-turbocharged 
+                        V12 engine  that produces 563 horsepower and 900 Nm of torque.
+                      </h5>
+                      <h1 class="mt-auto">Price : <span class="text-success">$500,000</span></h1>
+                      <a href="#" class="btn btn-success btn-lg">SHOP NOW</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4  d-flex">
+                  <div class="card flex-fill bg-dark text-center">
+                    <div class="mt-4">
+                      <img
+                        width="100%"
+                        height="100%"
+                        class="image-fluid mx-auto p-3"
+                        src="./picture/black_lamborghini_aventador_4k-2560x1440 2.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body text-light h-100  d-flex flex-column">
+                      <h1 class="card-title text-warning">Lamborghini Aventador</h1>
+                      <h5 class="card-text">
+                        The famous Lamborghini Aventador has a max power of 740cv(544kw) @8400 rpm
+                        accelerates from 0 to 100 in 2 seconds, if you love speed then this is for you.
+                      </h5>
+                      <h1 class="mt-auto">Price : <span class="text-success">$1,000,000</span></h1>
+                      <a href="#" class="btn btn-success btn-lg">SHOP NOW</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4  d-flex">
+                  <div class="card flex-fill bg-dark text-center">
+                    <div class="mt-4">
+                      <img
+                        width="100%"
+                        height="100%"
+                        class="image-fluid mx-auto p-3"
+                        src="./picture/bugatti-chiron-car 1.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body text-light h-100  d-flex flex-column">
+                      <h1 class="card-title text-warning">Bugatti Chiron</h1>
+                      <h5 class="card-text">
+                        The legendary Bugatti Chiron , this beast of an engine employs four turbochargers to generate
+                        a mighty 1500 horsepower and 1180 pound feet of torque.
+                        Has a top speed of 261mph , from zero to 60mph in 2.3 seconds.
+                        Buy this if you have a need for speed.
+                      </h5>
+                      <h1 class="mt-auto">Price : <span class="text-success">$5,000,000</span></h1>
+                      <a href="#" class="btn btn-success btn-lg">SHOP NOW</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4  d-flex">
+                  <div class="card flex-fill bg-dark text-center">
+                    <div class="mt-4">
+                      <img
+                        width="100%"
+                        height="100%"
+                        class="image-fluid mx-auto p-3"
+                        src="./picture/bugatti_divo_in_paris_4k-HD 1.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body text-light h-100  d-flex flex-column">
+                      <h1 class="card-title text-warning">Bugatti La Voiture Noire</h1>
+                      <h5 class="card-text">
+                        The LA VOITURE NOIRE, a tribute to the missing fourth ATLANTIC,
+                         represents an iconic blend of speed, luxury, and automotive haute couture.
+                         A pioneering spirit, passion for perfection, and the desire to continually redefine
+                          its limits have been at the essence of BUGATTI since it was founded in 1909.
+                      </h5>
+                      <h1 class="mt-auto">Price : <span class="text-success">$19,000,000</span></h1>
+                      <a href="#" class="btn btn-success btn-lg">SHOP NOW</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4  d-flex">
+                  <div class="card flex-fill bg-dark text-center">
+                    <div class="mt-4">
+                      <img
+                        width="100%"
+                        height="100%"
+                        class="image-fluid mx-auto p-3"
+                        src="./picture/bullet proff car.jpeg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body text-light h-100  d-flex flex-column">
+                      <h1 class="card-title text-warning">Bullet Proff Lexus LX600</h1>
+                      <h5 class="card-text">
+                        The Bulletproof Lexus LX600 comes with a V8 5.7L engine and a six-speed 
+                        sequential-shift transmission providing 383 horsepower. The armored LX 600 is 
+                        the perfect option for those who desire security, luxury, and reliability all
+                         in one vehicle built by Alpine Armoring®. 75.2 IN. 199.4 IN.
+                      </h5>
+                      <h1 class="mt-auto">Price : <span class="text-success">$250,000</span></h1>
+                      <a href="#" class="btn btn-success btn-lg">SHOP NOW</a>
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <div class="col-sm-6 col-md-6 col-lg-4  d-flex">
+                  <div class="card flex-fill bg-dark text-center">
+                    <div class="mt-4">
+                      <img
+                        width="100%"
+                        height="100%"
+                        class="image-fluid mx-auto p-3"
+                        src="./picture/flying car 4.jpg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body text-light h-100  d-flex flex-column">
+                      <h1 class="card-title text-warning">AIR EVTOL Air One</h1>
+                      <h5 class="card-text">
+                        The two-seat model weights 1,100kg and can carry additional load of 200kg per flight.
+                         Powered by a BMW 1.6l engine, the car-plane has an effective power output of 140HP. 
+                         Estimated travel range of AirCar is 1,000km and flight consumption of 18 l/h.
+                      </h5>
+                      <h1 class="mt-auto">Price : <span class="text-success">$600,000</span></h1>
+                      <a href="#" class="btn btn-success btn-lg">SHOP NOW</a>
+                    </div>
+                  </div>
+                </div>
+               
+                
+                <div class="col-sm-6 col-md-6 col-lg-4  d-flex">
+                  <div class="card flex-fill bg-dark text-center">                 
+                    <div class="mt-4">
+                      <img
+                        width="100%"
+                        height="100%"
+                        class="image-fluid mx-auto p-3"
+                        src="./picture/green lamborgini.jpeg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body text-light h-100  d-flex flex-column">
+                      <h1 class="card-title text-warning">Lamborghini's Verde Mantis</h1>
+                      <h5 class="card-text">
+                        Green might not be the first color that comes to mind when thinking about sports cars, 
+                        but Lamborghini's Verde Mantis is far from ordinary. This shade adds a lively and 
+                        unique aspect to the car's appearance.
+                      </h5>
+                      <h1 class="mt-auto">Price : <span class="text-success">$260,000</span></h1>
+                      <a href="#" class="btn btn-success btn-lg">SHOP NOW</a>
+                    </div>
+                  </div>
+                </div>
+
+                
+                <div class="col-sm-6 col-md-6 col-lg-4  d-flex">
+                  <div class="card flex-fill bg-dark text-center">             
+                    <div class="mt-4">
+                      <img
+                        width="100%"
+                        height="100%"
+                        class="image-fluid mx-auto p-3"
+                        src="./picture/hydrogen car.jpeg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body text-light h-100  d-flex flex-column">
+                      <h1 class="card-title text-warning">XP-1 HYDROGEN CAR</h1>
+                      <h5 class="card-text">
+                        The XP-1 is powered by four electric motors, one at each wheel,
+                         which are powered by the main fuel cell. Hyperion states a top 
+                         speed of 221 miles per hour (356 km/h) and a 0 to 60 mph (0 to 97 km/h) 
+                         acceleration time of 2.2 seconds.
+                      </h5>
+                      <h1 class="mt-auto">Price : <span class="text-success">$2,000,000</span></h1>
+                      <a href="#" class="btn btn-success btn-lg">SHOP NOW</a>
+                    </div>
+                  </div>
+                </div>
+                 
+                
+                <div class="col-sm-6 col-md-6 col-lg-4  d-flex">
+                  <div class="card flex-fill bg-dark text-center">             
+                    <div class="mt-4">
+                      <img
+                        width="100%"
+                        height="100%"
+                        class="image-fluid mx-auto p-3"
+                        src="./picture/red car.jpeg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body text-light h-100  d-flex flex-column">
+                      <h1 class="card-title text-warning">Bugatti Veyron</h1>
+                      <h5 class="card-text">
+                        The heart and soul of the Veyron is the 8.0-liter W16 engine with four turbochargers,
+                         which initially generated 1,001 PS, and an incredible 1,200 PS in later models. 
+                         The 16-cylinder mid-engine is 710 mm in length, no longer than a conventional V12 engine, 
+                         and weighs just 490 kg due to its lightweight construction.
+                      </h5>
+                      <h1 class="mt-auto">Price : <span class="text-success">$2,500,000</span></h1>
+                      <a href="#" class="btn btn-success btn-lg">SHOP NOW</a>
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <div class="col-sm-6 col-md-6 col-lg-4  d-flex">
+                  <div class="card flex-fill bg-dark text-center">
+                    <div class="mt-4">
+                      <img
+                        width="100%"
+                        height="100%"
+                        class="image-fluid mx-auto p-3"
+                        src="./picture/red ferrari.jpeg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <!-- used text success to make the price number green -->
+                    <div class="card-body text-light h-100  d-flex flex-column">
+                      <h1 class="card-title text-warning">296 GTB Ferrari</h1>
+                      <h5 class="card-text">
+                        The 296 GTB is powered by a 2,992 cc (3.0 L) twin-turbo 120° V6 engine with a maximum output of 488 kW 
+                        (654 hp; 663 PS) at 8,000 rpm, in combination with a 123 kW (165 hp; 167 PS) electric motor.
+                      </h5>
+                      <h1 class="mt-auto">Price : <span class="text-success">$400,000</span></h1>
+                      <a href="#" class="btn btn-success btn-lg">SHOP NOW</a>
+                    </div>
+                  </div>
+                </div>
+
+                
+                <div class="col-sm-6 col-md-6 col-lg-4 d-flex">
+                  <div class="card flex-fill bg-dark text-center">
+                    <div class="mt-4">
+                      <img
+                        width="100%"
+                        height="100%"
+                        class="image-fluid mx-auto p-3"
+                        src="./picture/sport car.jpeg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body text-light h-100  d-flex flex-column">
+                      <h1 class="card-title text-warning">Avorio Ferrai Car </h1>
+                      <h5 class="card-text">
+                        The model from Ferrari runs on a massive 6262 cc V12 engine which
+                         generates maximum power of 660 bhp @ 8000 rpm and produces a maximum
+                          torque of 683 Nm @ 6000 ...
+                      </h5>
+                      <h1 class="mt-auto">Price : <span class="text-success">$499,000</span></h1>
+                      <a href="#" class="btn btn-success btn-lg">SHOP NOW</a>
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <div class="col-sm-6 col-md-6 col-lg-4  d-flex">
+                  <div class="card flex-fill bg-dark text-center">
+                    <div class="mt-4">
+                      <img
+                        width="100%"
+                        height="100%"
+                        class="image-fluid mx-auto p-3"
+                        src="./picture/tesla truck.jpeg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body text-light h-100  d-flex flex-column">
+                      <h1 class="card-title text-warning"> Tesla Cybertruck</h1>
+                      <h5 class="card-text">
+                        The Tesla Cybertruck comes with three motor configurations: Single Motor RWD, Dual Motor AWD, and Tri Motor AWD.
+                        Motors: One, Two, or Three electric motors
+                        Battery: up to 200 kWh
+                        Range: up to 500 miles (800 km)
+                        Top speed: up to 130 mph (210 km/h)
+                        0-60 mph: as quick as 2.9 seconds
+                        Horsepower: up to 800 hp
+                        Torque: up to 1,000 lb-ft
+                        Drive: Rear-wheel drive or All-wheel drive
+                        Seats: up to 6 adults
+                      </h5>
+                      <h1 class="mt-auto">Price : <span class="text-success">$300,000</span></h1>
+                      <a href="#" class="btn btn-success btn-lg">SHOP NOW</a>
+                    </div>
+                  </div>
+                </div>
+
+                
+                <div class="col-sm-6 col-md-6 col-lg-4  d-flex">
+                  <div class="card flex-fill bg-dark text-center">
+                    <div class="mt-4">
+                      <img
+                        width="100%"
+                        height="100%"
+                        class="image-fluid mx-auto p-3"
+                        src="./picture/yellow audi car.jpeg"
+                        alt="Card image cap"
+                      />
+                    </div>
+                    <div class="card-body text-light h-100  d-flex flex-column">
+                      <h1 class="card-title text-warning">Audi RS7 Sportback </h1>
+                      <h5 class="card-text">
+                        Power comes from a brilliant twin-turbo 4.0-liter V-8 that pairs with a 48-volt hybrid system,
+                         eight-speed automatic transmission, and Quattro all-wheel drive. All this tech makes the RS7 
+                         heavier than the last generation model, which made as much as 605 horsepower. To counter the added mass,
+                          the 2025 RS7 is good for 621 horsepower and 627 pound-feet of torque.
+                      </h5>
+                      <h1 class="mt-auto">Price : <span class="text-success">$550,000</span></h1>
+                      <a href="#" class="btn btn-success btn-lg">SHOP NOW</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+         <!-- did an automatic scrolling container with the help of java script -->
+    <div class="scrolling-container mt-1">
+      <div class="scrolling-wrapper">
+          <img src="./picture/black g wagn.jpeg" alt="Image 1">
+          <img src="./picture/black rolls royce.jpeg" alt="Image 2">
+          <img src="./picture/black_lamborghini_aventador_4k-2560x1440 2.jpg" alt="Image 3">
+          <img src="./picture/bugatti-chiron-car 1.jpg" alt="Image 1">
+          <img src="./picture/bugatti_divo_in_paris_4k-HD 1.jpg" alt="Image 1">
+          <img src="./picture/bullet proff car.jpeg" alt="Image 1">
+          <img src="./picture/flying car 4.jpg" alt="Image 1">
+          <img src="./picture/green lamborgini.jpeg" alt="Image 1">
+          <img src="./picture/hydrogen car.jpeg" alt="Image 1">
+          <img src="./picture/lamborghini_urus_performante_5.jpg" alt="Image 1">
+          <img src="./picture/red car.jpeg" alt="Image 1">
+          <img src="./picture/red ferrari.jpeg" alt="Image 1">
+          <img src="./picture/sport car.jpeg" alt="Image 1">
+          <img src="./picture/tesla truck.jpeg" alt="Image 1">
+          <img src="./picture/yellow audi car.jpeg" alt="Image 1">
+      </div>
+    </div>
+
+
+                         <!-- footer -->
+      <!-- our footer with our contact email -->
+     <footer class="bg-dark mt-2 text-light">
+       <div class="pt-4 text-center" id="Contact" >
+          <h2>Contact Us</h2>
+          <p>Email: <a href=" CartelsAuto007@gmail.com"> CartelsAuto007@gmail.com</a></p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Address: 467 Wall Street, Vine Wood, USA</p>
+          <p class="text-warning">copyright &COPY; All Rights Reserved Cartels Auto 2024 .</p>
+          <!-- the boothstrap icon logos -->
+         <div>
+           <i class="bi bi-twitter text-primary"></i>
+           <i class="bi bi-messenger text-primary"></i>
+           <i class="bi bi-whatsapp text-primary"></i>
+           <i class="bi bi-facebook text-primary"></i>
+           <i class="bi bi-linkedin text-primary"></i>
+         </div>
+       </div>
+      
+     </footer>
+           <!-- javascript linking -->
+    <script src="./jscript.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script> 
+  </body>
+</html> 
+       

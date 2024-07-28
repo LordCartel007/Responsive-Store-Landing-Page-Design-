@@ -1,0 +1,18 @@
+        MY DESIGN CHOICES
+  So the first thing that i thought of was using boostrap grid to 
+display the products in the product section. firstly , I created 
+my nav bar so that i could have my menu with my store name on it.
+    I then thought of how i will display my products per column so I 
+decided to display 1 product per row for small screen, 2 products per 
+row for medium screen while 3 products per row for large screen. I used
+boostrap color (text-success) to make my price numbers to turn green,
+then i spaced each product row.
+
+   I used autoscroll by javascript to make a row of images to be 
+scrolling automatically at the bottom of the product section for my 
+cars. I then added my footer which contained the social media app icon 
+from boothstrap and I also changed my font family using google fonts 
+to make the text writing look good. 
+
+  I wrote my copy right reserve at the end with my contact email so 
+  any customer can reach out. So that's pretty much it.
